@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="482.0" prefWidth="635.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagerAendernController">
+  <children>
+    <Label layoutX="112.0" layoutY="6.0" prefHeight="50.0" prefWidth="405.0" text="Fluggesellschaftsmanager ändern">
+      <font>
+        <Font name="System Bold" size="25.0" />
+      </font>
+    </Label>
+    <Label layoutX="23.0" layoutY="134.0" prefHeight="17.0" prefWidth="75.0" text="Vorname       :" />
+    <Label layoutX="23.0" layoutY="195.0" prefHeight="17.0" prefWidth="89.0" text="Nachname    :" />
+    <Label layoutX="23.0" layoutY="309.0" prefHeight="25.0" prefWidth="89.0" text="Username    :" />
+    <TextField fx:id="vorname_tf" layoutX="125.0" layoutY="130.0" prefWidth="200.0" />
+    <Button fx:id="btnAendern" layoutX="36.0" layoutY="431.0" mnemonicParsing="false" onAction="#Aendern" prefHeight="17.0" prefWidth="89.0" text="Ändern" />
+    <Button fx:id="btnAbbrechen" layoutX="247.0" layoutY="443.0" mnemonicParsing="false" onAction="#Abbrechen" prefHeight="21.9998779296875" prefWidth="89.0" text="Abbrechen" />
+    <Label layoutX="23.0" layoutY="352.0" prefHeight="17.0" prefWidth="98.0" text="Altes Password :" />
+    <TextField fx:id="nachname_tf" layoutX="125.0" layoutY="191.0" prefWidth="200.0" />
+    <TextField fx:id="username_tf" layoutX="125.0" layoutY="309.0" prefWidth="200.0" />
+      <TableView fx:id="tableManager" layoutX="379.0" layoutY="68.0" prefHeight="346.0" prefWidth="227.0">
+        <columns>
+          <TableColumn fx:id="idcol1" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="idcol2" prefWidth="75.0" text="Firstname" />
+            <TableColumn fx:id="idcol3" prefWidth="75.0" text="Lastname" />
+        </columns>
+      </TableView>
+      <Label layoutX="23.0" layoutY="75.0" text="Id_Manager   :" />
+      <TextField fx:id="idmanager_tf" layoutX="125.0" layoutY="71.0" prefHeight="25.0" prefWidth="200.0" />
+      <ChoiceBox fx:id="geschlecht_cb" layoutX="126.0" layoutY="251.0" prefWidth="150.0" />
+      <Label layoutX="23.0" layoutY="251.0" prefHeight="25.0" prefWidth="89.0" text="Geschlecht   :" />
+      <PasswordField fx:id="altpassword_pf" layoutX="125.0" layoutY="346.0" prefHeight="30.0" prefWidth="200.0" promptText="Geben Sie das alte Passwort" text="" />
+      <PasswordField fx:id="neupassword_pf" layoutX="125.0" layoutY="393.0" prefHeight="30.0" prefWidth="200.0" promptText="Geben Sie Ihr neues Passwort" text="" />
+      <Label layoutX="23.0" layoutY="391.0" prefHeight="17.0" prefWidth="98.0" text="Neues Passwort     :" />
+  </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="585.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BuchungOverviewController">
+  <children>
+    <Button fx:id="btnAbbrechen" layoutX="652.0" layoutY="550.0" mnemonicParsing="false" onAction="#Abbrechen" prefHeight="25.0" prefWidth="89.0" text="Abbrechen" />
+    <Label layoutX="313.0" layoutY="5.0" prefHeight="46.0" prefWidth="248.0" text="Buchung">
+      <font>
+        <Font name="System Bold Italic" size="31.0" />
+      </font>
+    </Label>
+      <Label layoutX="51.0" layoutY="59.0" text="ID" />
+      <Label layoutX="407.0" layoutY="59.0" text="Lastname:" />
+      <Label layoutX="223.0" layoutY="60.0" text="Firstname" />
+      <TextField fx:id="ecoseat_tf" layoutX="660.0" layoutY="98.0" prefHeight="25.0" prefWidth="68.0" style="-fx-border-color: gray;" />
+      <TextField fx:id="lastname_tf" disable="true" layoutX="476.0" layoutY="54.0" prefHeight="25.0" prefWidth="89.0" style="-fx-border-color: gray;" />
+      <TextField fx:id="id_tf" disable="true" layoutX="144.0" layoutY="54.0" prefHeight="25.0" prefWidth="52.0" style="-fx-border-color: gray;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TableView fx:id="tableBuchung" layoutX="43.0" layoutY="233.0" prefHeight="269.0" prefWidth="701.0">
+         <columns>
+            <TableColumn fx:id="tcol11" prefWidth="71.0" text="Id_flug" />
+            <TableColumn fx:id="tcol1" prefWidth="131.0" text="Start Airport" />
+            <TableColumn fx:id="tcol2" prefWidth="114.0" text="End Airport" />
+            <TableColumn fx:id="tcol3" prefWidth="102.0" text="Flugzeug" />
+            <TableColumn fx:id="tcol21" prefWidth="103.0" text="Preis Economy" />
+            <TableColumn fx:id="tcol211" prefWidth="99.0" text="Preis Business" />
+            <TableColumn fx:id="tcol31" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="tcol4" prefWidth="0" text="Stops" />
+         </columns>
+      </TableView>
+      <ComboBox fx:id="from" layoutX="123.0" layoutY="93.0" prefHeight="32.0" prefWidth="146.0" promptText="Please select Airport" />
+      <ComboBox fx:id="to" layoutX="123.0" layoutY="141.0" prefHeight="32.0" prefWidth="146.0" promptText="Please select Airport" />
+      <DatePicker fx:id="date" layoutX="448.0" layoutY="95.0" prefHeight="32.0" prefWidth="121.0" promptText="Please select Start Date" />
+      <ChoiceBox fx:id="multistopp" layoutX="448.0" layoutY="141.0" prefHeight="32.0" prefWidth="121.0" />
+      <TextField fx:id="zwischenStopZahl" layoutX="448.0" layoutY="190.0" prefHeight="32.0" prefWidth="121.0" />
+      <Label layoutX="45.0" layoutY="101.0" prefHeight="17.0" prefWidth="68.0" text="Start Airport" />
+      <Label layoutX="45.0" layoutY="149.0" prefHeight="11.0" prefWidth="68.0" text="End Airport" />
+      <Label layoutX="302.0" layoutY="102.0" prefHeight="17.0" prefWidth="105.0" text="Date of departure" />
+      <Label layoutX="302.0" layoutY="149.0" prefHeight="17.0" prefWidth="105.0" text="Direkt/ Multi-stopp" />
+      <Button fx:id="btnBuchen" layoutX="532.0" layoutY="550.0" mnemonicParsing="false" onAction="#Buchen" prefHeight="21.9998779296875" prefWidth="89.0" text="buchen" />
+      <Button fx:id="btnSuchen" layoutX="650.0" layoutY="190.0" mnemonicParsing="false" onAction="#Suchen" prefHeight="21.9998779296875" prefWidth="89.0" text="suchen" />
+      <TextField fx:id="busseat_tf" layoutX="660.0" layoutY="144.0" prefHeight="25.0" prefWidth="68.0" style="-fx-border-color: gray;" />
+      <Label layoutX="581.0" layoutY="149.0" text="N°Buss.Seats" />
+      <Label layoutX="583.0" layoutY="102.0" prefHeight="17.0" prefWidth="68.0" text="N°Eco.Seats" />
+      <TextField fx:id="firstname_tf" disable="true" layoutX="302.0" layoutY="54.0" prefHeight="25.0" prefWidth="89.0" style="-fx-border-color: gray;" />
+      <Label layoutX="45.0" layoutY="518.0" prefHeight="32.0" prefWidth="178.0" text="Gesamtbetrag (ink. MwSt) :">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="betrag" layoutX="235.0" layoutY="518.0" prefHeight="27.0" prefWidth="121.0" style="-fx-border-color: gray;" />
+  </children>
+</AnchorPane>

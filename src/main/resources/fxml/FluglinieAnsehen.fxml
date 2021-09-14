@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="508.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FluglinieAnsehenController">
+    <children>
+        <Label layoutX="399.0" layoutY="-1.0" prefHeight="50.0" prefWidth="200.0" text="Fluglinie Ansehen">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnAbbrechen" layoutX="780.0" layoutY="466.0" mnemonicParsing="false" onAction="#abbrechen" text="Abbrechen" />
+        <TableView fx:id="tableFluglinie" layoutX="10.0" layoutY="45.0" prefHeight="405.0" prefWidth="903.0" styleClass="tableview">
+            <columns>
+                <TableColumn fx:id="flights" prefWidth="75.0" text="Flugzeug" />
+                <TableColumn fx:id="start" prefWidth="56.0" text="Start" />
+                <TableColumn fx:id="Ziel" prefWidth="65.0" text="Ziel" />
+                <TableColumn fx:id="interval" prefWidth="84.0" text="Intervall" />
+                <TableColumn fx:id="start_id" prefWidth="105.0" text="StartDatum" />
+                <TableColumn fx:id="nr_eco" prefWidth="106.0" text="Anzahl Eco" />
+                <TableColumn fx:id="pr_eco" prefWidth="81.0" text="Preis Eco" />
+                <TableColumn fx:id="nr_bus" prefWidth="112.0" text="Anzahl Business" />
+                <TableColumn fx:id="pr_bus" prefWidth="97.0" text="Preis Business" />
+                <TableColumn fx:id="Model" prefWidth="157.0" text="Model Flugzeuge" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

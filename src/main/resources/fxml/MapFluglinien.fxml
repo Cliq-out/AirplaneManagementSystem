@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.lynden.gmapsfx.GoogleMapView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MapFluglinienController">
+   <children>
+      <GoogleMapView fx:id="mapView" layoutY="1.0" prefHeight="599.0" prefWidth="885.0" />
+      <TextField fx:id="from" layoutY="1.0" prefHeight="26.0" prefWidth="162.0" promptText="From destination" />
+      <TextField fx:id="to" layoutY="42.0" onAction="#toAction" prefHeight="26.0" prefWidth="162.0" promptText="To destination" />
+<!--      <TextField fx:id="to" layoutY="44.0" onAction="#toAction" prefHeight="28.0" prefWidth="176.0" promptText="to destination" />-->
+   </children>
+</AnchorPane>

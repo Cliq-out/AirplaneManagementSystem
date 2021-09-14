@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:controller="controller.FluglinieAnsehenController" stylesheets="@SEPCSS.css" layoutX="199.0" layoutY="-1.0" prefHeight="600.0" prefWidth="701.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="199.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+         <children>
+            <HBox alignment="CENTER" prefHeight="600.0" prefWidth="701.0" styleClass="LoginInnerVBox" VBox.vgrow="ALWAYS">
+               <children>
+                  <TableView prefHeight="508.0" prefWidth="701.0" styleClass="tableview" HBox.hgrow="ALWAYS">
+                      <columns>
+                          <TableColumn fx:id="flights" prefWidth="75.0" text="Flugzeug" />
+                          <TableColumn fx:id="start" prefWidth="56.0" text="Start" />
+                          <TableColumn fx:id="Ziel" prefWidth="65.0" text="Ziel" />
+                          <TableColumn fx:id="interval" prefWidth="71.0" text="Intervall" />
+                          <TableColumn fx:id="start_id" prefWidth="99.199951171875" text="StartDatum" />
+                          <TableColumn fx:id="nr_eco" prefWidth="124.800048828125" text="Anzahl Eco" />
+                          <TableColumn fx:id="pr_eco" prefWidth="116.0" text="Preis Eco" />
+                          <TableColumn fx:id="nr_bus" prefWidth="131.99993896484375" text="Anzahl Business" />
+                          <TableColumn fx:id="pr_bus" prefWidth="141.60015869140625" text="Preis Business" />
+                      </columns>
+                  </TableView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>

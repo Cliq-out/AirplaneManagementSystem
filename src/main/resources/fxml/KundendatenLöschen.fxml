@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cache="true" cacheHint="DEFAULT" depthTest="INHERIT" prefHeight="595.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.KundendatenLoeschenController">
+  <children>
+    <TextField fx:id="firstname_tf" layoutX="185.0" layoutY="120.0" prefHeight="30.0" prefWidth="304.0" promptText="Please enter your firstname" />
+    <Label layoutX="67.0" layoutY="71.0" prefWidth="96.0" text="Kunde ID:" />
+    <Label layoutX="67.0" layoutY="181.0" prefWidth="96.0" text="Nachname     :" />
+    <TextField fx:id="lastname_tf" layoutX="185.0" layoutY="175.0" prefHeight="30.0" prefWidth="304.0" promptText="Please enter your lastname" />
+    <Label layoutX="62.0" layoutY="453.0" prefHeight="18.0" prefWidth="106.0" text=" Passwort        :" />
+    <PasswordField fx:id="password_pf" layoutX="185.0" layoutY="447.0" prefHeight="30.0" prefWidth="304.0" promptText="Please enter your password" text="" />
+    <Label layoutX="176.0" layoutY="14.0" prefHeight="42.0" prefWidth="322.0" text="Löschung der Kundendaten">
+      <font>
+        <Font name="System Bold" size="24.0" />
+      </font>
+    </Label>
+    <Button fx:id="btnLoeschen" layoutX="448.0" layoutY="545.0" mnemonicParsing="false" onAction="#Loeschen" prefHeight="30.0" prefWidth="126.0" text="Löschen" />
+    <Button fx:id="btnAbbrechen" layoutX="41.0" layoutY="539.0" mnemonicParsing="false" onAction="#abbrechen" prefHeight="30.0" prefWidth="126.0" text="Abbrechen" />
+      <AmbientLight color="CHARTREUSE" layoutX="378.0" layoutY="176.0" lightOn="true" />
+      <Label layoutX="67.0" layoutY="236.0" prefWidth="96.0" text="Adresse         :" />
+      <TextField fx:id="adresse_tf" layoutX="185.0" layoutY="230.0" prefHeight="30.0" prefWidth="304.0" promptText="Please enter your Adresse" />
+      <Label layoutX="67.0" layoutY="287.0" prefWidth="96.0" text="Postfach        :" />
+      <Label layoutX="62.0" layoutY="341.0" prefHeight="18.0" prefWidth="105.0" text="Telofon_Nr      :     " />
+      <TextField fx:id="postfach_tf" layoutX="185.0" layoutY="281.0" prefHeight="30.0" prefWidth="304.0" promptText="Please enter your mailbox" />
+      <TextField fx:id="telefonNr_tf" layoutX="185.0" layoutY="335.0" prefHeight="30.0" prefWidth="304.0" promptText="Please enter your telephone number" />
+      <TextField fx:id="username_tf" layoutX="185.0" layoutY="389.0" prefHeight="30.0" prefWidth="304.0" promptText="Please enter your username" />
+      <Label layoutX="67.0" layoutY="395.0" prefWidth="96.0" text="Username      :" />
+      <Label layoutX="67.0" layoutY="126.0" prefWidth="96.0" text="Vorname       :" />
+      <TextField fx:id="cus_id" layoutX="185.0" layoutY="68.0" prefHeight="30.0" prefWidth="304.0" />
+      <BorderPane prefHeight="200.0" prefWidth="200.0" />
+      <BorderPane prefHeight="200.0" prefWidth="200.0" />
+
+  </children>
+
+</AnchorPane>

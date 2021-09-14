@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="503.0" prefWidth="635.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.KundeController">
+  <children>
+    <Button fx:id="btnAusgang" layoutX="463.0" layoutY="451.0" mnemonicParsing="false" onAction="#Ausgang" prefHeight="37.0" prefWidth="111.0" text="Ausgang">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnÄndern" layoutX="205.0" layoutY="79.0" mnemonicParsing="false" onAction="#Ändern" prefHeight="38.0" prefWidth="258.0" text="Kundendaten Ändern">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnlöschen" layoutX="205.0" layoutY="131.0" mnemonicParsing="false" onAction="#löschen" prefHeight="38.0" prefWidth="258.0" text="Kundendaten Löschen">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="FlügeBuchen" layoutX="205.0" layoutY="179.0" mnemonicParsing="false" onAction="#FlügeBuchen" prefHeight="43.0" prefWidth="258.0" text="Flüge Buchen">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="237.0" layoutY="26.0" prefHeight="43.0" prefWidth="206.0" text="Kunde Optionen">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnFlugkilometerkonto" layoutX="205.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnFlugkilometerkonto" prefHeight="17.0" prefWidth="258.0" text="Flugkilometerkonto">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBuchungsübersicht" layoutX="204.0" layoutY="285.0" mnemonicParsing="false" onAction="#Buchungsübersicht" prefHeight="30.0" prefWidth="258.0" text="Buchungsübersicht">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="sp_reserv_btn" layoutX="204.0" layoutY="233.0" mnemonicParsing="false" onAction="#SPReservieren" prefHeight="39.0" prefWidth="258.0" text="Sitzplätze reservieren">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="rec_message" layoutX="204.0" layoutY="387.0" mnemonicParsing="false" onAction="#receiveMessage" prefHeight="17.0" prefWidth="258.0" text="Mein Postfach">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+  </children>
+</AnchorPane>

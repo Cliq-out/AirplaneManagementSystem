@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="530.0" prefWidth="635.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdministratorController">
+  <children>
+    <Button fx:id="btnAusgang" layoutX="423.0" layoutY="456.0" mnemonicParsing="false" onAction="#Ausgang" prefHeight="37.0" prefWidth="111.0" text="Ausgang">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnAnlegen" layoutX="205.0" layoutY="85.0" mnemonicParsing="false" onAction="#Anlegen" prefHeight="54.0" prefWidth="257.0" text="Manager anlegen">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAendern" layoutX="205.0" layoutY="149.0" mnemonicParsing="false" onAction="#Aendern" prefHeight="54.0" prefWidth="257.0" text="Manager ändern">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnLoeschen" layoutX="205.0" layoutY="217.0" mnemonicParsing="false" onAction="#Loeschen" prefHeight="54.0" prefWidth="257.0" text="Manager löschen">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="189.0" layoutY="21.0" prefHeight="43.0" prefWidth="289.0" text="Administrator Optionen">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnFlugzeugeListe" layoutX="205.0" layoutY="354.0" mnemonicParsing="false" onAction="#flugzeugeListe" prefHeight="54.0" prefWidth="257.0" text="Flugzeuge Liste">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnFlughafenListe" layoutX="205.0" layoutY="285.0" mnemonicParsing="false" onAction="#flughafenListe" prefHeight="54.0" prefWidth="257.0" text="Flughafen Liste">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+  </children>
+</AnchorPane>

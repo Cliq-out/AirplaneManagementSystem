@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cache="true" cacheHint="DEFAULT" depthTest="INHERIT" prefHeight="640.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.KundePostfachManController">
+   <children>
+      <TextField fx:id="username_tf" layoutX="210.0" layoutY="97.0" prefHeight="42.0" prefWidth="120.0" />
+      <Label layoutX="142.0" layoutY="38.0" prefHeight="42.0" prefWidth="363.0" text="Nachricht an Kunden Schicken">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnZurück" layoutX="96.0" layoutY="588.0" mnemonicParsing="false" onAction="#Zurück" prefHeight="30.0" prefWidth="126.0" text="Zurück" />
+      <AmbientLight color="CHARTREUSE" layoutX="378.0" layoutY="176.0" lightOn="true" />
+      <Button fx:id="sendenbtn" layoutX="459.0" layoutY="588.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="30.0" prefWidth="126.0" text="senden" />
+      <TextArea fx:id="message" layoutX="93.0" layoutY="188.0" prefHeight="389.0" prefWidth="488.0" />
+      <TextField fx:id="subject" layoutX="90.0" layoutY="140.0" prefHeight="42.0" prefWidth="488.0" promptText="Subject of message" />
+      <ComboBox fx:id="customer_id" layoutX="90.0" layoutY="97.0" onAction="#showCustomerID" prefHeight="42.0" prefWidth="120.0" />
+      <TextField fx:id="firstname" layoutX="330.0" layoutY="97.0" prefHeight="42.0" prefWidth="120.0" />
+      <TextField fx:id="lastname" layoutX="450.0" layoutY="97.0" prefHeight="42.0" prefWidth="126.0" />
+
+   </children>
+</AnchorPane>

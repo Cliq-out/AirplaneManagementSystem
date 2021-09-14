@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="rootPane" styleClass="Background" stylesheets="@SEPCSS.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminController">
+   <left>
+      <VBox prefHeight="600.0" prefWidth="199.0" styleClass="LoginOuterVBoxColor" stylesheets="@SEPCSS.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+         <children>
+            <HBox alignment="CENTER" minHeight="100.0" prefHeight="100.0" prefWidth="200.0" styleClass="StatusColor" stylesheets="@SEPCSS.css">
+               <children>
+                  <Label prefHeight="53.0" prefWidth="77.0" text="Admin" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Button fx:id="btnAnlegen" mnemonicParsing="false" onAction="#managerAnlegen" prefHeight="74.0" prefWidth="200.0" stylesheets="@SEPCSS.css" text="Manger hinzufügen" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnLoeschen" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" onAction="#managerLoeschen" prefHeight="74.0" prefWidth="200.0" stylesheets="@SEPCSS.css" text="Manger löschen" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAendern" layoutX="10.0" layoutY="184.0" mnemonicParsing="false" onAction="#managerAendern" prefHeight="74.0" prefWidth="200.0" stylesheets="@SEPCSS.css" text="ManagerAendern" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Pane prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <Button fx:id="btnAusgang" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" onAction="#logout" prefHeight="95.0" prefWidth="199.0" styleClass="StatusColor" stylesheets="@SEPCSS.css" text="LOGOUT" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+   </center>
+   <center>
+      <Pane prefWidth="701.0" />
+   </center>
+</BorderPane>

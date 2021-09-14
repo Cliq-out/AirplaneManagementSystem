@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="523.0" prefWidth="777.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FlughaefenZeigenController">
+  <children>
+      <TableView fx:id="tableFlughafen" layoutX="7.0" layoutY="127.0" prefHeight="357.0" prefWidth="764.0">
+        <columns>
+          <TableColumn fx:id="idcol1" prefWidth="46.0" text="Code" />
+          <TableColumn fx:id="idcol2" prefWidth="43.0" text="Lat" />
+            <TableColumn fx:id="idcol3" prefWidth="43.0" text="Long" />
+            <TableColumn fx:id="idcol4" prefWidth="45.0" text="Name" />
+            <TableColumn fx:id="idcol5" prefWidth="48.0" text="City" />
+            <TableColumn fx:id="idcol18" prefWidth="48.0" text="State" />
+            <TableColumn fx:id="idcol6" prefWidth="58.0" text="Country" />
+            <TableColumn fx:id="idcol7" prefWidth="54.0" text="Woeid" />
+            <TableColumn fx:id="idcol8" prefWidth="38.0" text="tz" />
+            <TableColumn fx:id="idcol9" prefWidth="43.0" text="Phone" />
+            <TableColumn fx:id="idcol10" prefWidth="42.0" text="Type" />
+            <TableColumn fx:id="idcol11" prefWidth="44.0" text="Email" />
+            <TableColumn fx:id="idcol12" prefWidth="45.0" text="url" />
+            <TableColumn fx:id="idcol13" prefWidth="48.0" text="Length" />
+            <TableColumn fx:id="idcol14" prefWidth="38.0" text="elev" />
+            <TableColumn fx:id="idcol15" prefWidth="32.0" text="icao" />
+            <TableColumn fx:id="idcol16" prefWidth="42.0" text="Flight" />
+            <TableColumn fx:id="idcol17" prefWidth="42.0" text="Carriers" />
+        </columns>
+      </TableView>
+      <Label layoutX="338.0" layoutY="10.0" prefHeight="45.0" prefWidth="123.0" text="Flughäfen">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAbbrechen" layoutX="605.0" layoutY="484.0" mnemonicParsing="false" onAction="#abbrechen" prefHeight="1.0" prefWidth="74.0" text="Abbrechen" />
+      <Button fx:id="load_bt" layoutX="689.0" layoutY="53.0" mnemonicParsing="false" onAction="#loadFile" prefHeight="0.0" prefWidth="74.0" text="Load DB" />
+      <Label layoutX="26.0" layoutY="57.0" text="Select File :" />
+      <TextField fx:id="file_tf" layoutX="103.0" layoutY="53.0" onMouseClicked="#selectFile" prefHeight="25.0" prefWidth="569.0" promptText="Select a file" />
+  </children>
+</AnchorPane>

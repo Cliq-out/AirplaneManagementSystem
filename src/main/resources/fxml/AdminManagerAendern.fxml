@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" layoutX="192.0" prefHeight="600.0" prefWidth="701.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="199.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagerAendernController">
+         <children>
+            <HBox alignment="CENTER" layoutX="199.0" prefHeight="502.0" prefWidth="701.0" stylesheets="@SEPCSS.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="199.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="500.0" prefWidth="701.0">
+                     <children>
+                        <HBox alignment="BOTTOM_CENTER" layoutX="271.0" layoutY="159.0" maxWidth="180.0" prefHeight="35.0" prefWidth="206.0" styleClass="LoginHBox" stylesheets="@SEPCSS.css">
+                           <children>
+                              <TextField fx:id="idmanager_tf" alignment="CENTER" promptText="Manager ID" styleClass="UniversalText" stylesheets="@SEPCSS.css">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="BOTTOM_CENTER" layoutX="271.0" layoutY="176.0" maxWidth="180.0" prefHeight="35.0" prefWidth="206.0" styleClass="LoginHBox" stylesheets="@SEPCSS.css">
+                           <children>
+                              <TextField fx:id="nachname_tf" alignment="CENTER" promptText="Manager Nachname" styleClass="UniversalText" stylesheets="@SEPCSS.css">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="BOTTOM_CENTER" maxWidth="180.0" prefHeight="35.0" prefWidth="206.0" styleClass="LoginHBox" stylesheets="@SEPCSS.css">
+                           <children>
+                              <TextField fx:id="vorname_tf" alignment="CENTER" promptText="Manager Vorname" styleClass="UniversalText" stylesheets="@SEPCSS.css">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="BOTTOM_CENTER" layoutX="96.0" layoutY="204.0" maxWidth="180.0" prefHeight="35.0" prefWidth="206.0" stylesheets="@SEPCSS.css">
+                           <children>
+                              <ChoiceBox fx:id="geschlecht_cb" prefHeight="49.0" prefWidth="220.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="BOTTOM_CENTER" layoutX="96.0" layoutY="241.0" maxWidth="180.0" prefHeight="35.0" prefWidth="206.0" styleClass="LoginHBox" stylesheets="@SEPCSS.css">
+                           <children>
+                              <TextField fx:id="username_tf" alignment="CENTER" promptText="Manager Username" styleClass="UniversalText" stylesheets="@SEPCSS.css">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="BOTTOM_CENTER" layoutX="96.0" layoutY="259.0" maxWidth="180.0" prefHeight="35.0" prefWidth="206.0" styleClass="LoginHBox" stylesheets="@SEPCSS.css">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                           <children>
+                              <PasswordField fx:id="password_pf" alignment="CENTER" prefHeight="93.0" prefWidth="295.0" promptText="Passwort" styleClass="UniversalText" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="39.0" prefWidth="259.0">
+                           <children>
+                              <Button fx:id="btnAendern" mnemonicParsing="false" onAction="#Aendern" prefHeight="41.0" prefWidth="140.0" styleClass="UniversalButton" stylesheets="@SEPCSS.css" text="Ändern" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="500.0" prefWidth="701.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <TableView fx:id="tableManager" VBox.vgrow="ALWAYS">
+                          <columns>
+                            <TableColumn fx:id="idcol1" prefWidth="75.0" text="ID" />
+                            <TableColumn fx:id="idcol2" prefWidth="75.0" text="Vorname" />
+                             <TableColumn fx:id="idcol3" prefWidth="100.0" text="Nachname" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>

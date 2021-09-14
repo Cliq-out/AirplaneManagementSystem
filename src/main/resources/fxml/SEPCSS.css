@@ -1,0 +1,229 @@
+.root {
+    -fx-font-size: 14px;
+    -fx-font-family: sans-serif;
+    -fx-background-color: #161637;
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+
+}
+
+.text-field{
+
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+}
+
+.UnderLinedText {
+    -fx-text-fill: white;
+    -fx-background-color: rgba(255, 255, 255, 0);
+    -fx-border-color: white;
+    -fx-border-width: 0px 0px 2px 0px;
+}
+
+.LoginHBox {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 0px 0px 2px 0px;
+}
+
+.VboxDivider{
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 1px 0px 0px 0px;
+
+}
+
+.button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-background-radius: 0px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #7f7fcc;
+    -fx-text-fill: white;
+    -fx-background-radius: 0px;
+    -fx-cursor: hand;
+
+}
+
+.UniversalButton {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-background-radius: 0;
+    -fx-cursor: hand;
+}
+
+.UniversalButton:hover {
+    -fx-background-color: #7f7fcc;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-background-radius: 0;
+    -fx-cursor: hand;
+
+}
+
+.UsedButton {
+    -fx-background-color: #161637;
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+    -fx-cursor: hand;
+}
+
+.UsedButton:hover {
+    -fx-background-color: #161637;
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+    -fx-cursor: hand;
+
+}
+
+.LoginInnerVBoxColor {
+    -fx-background-color: #1f1f4d;
+
+}
+
+.LoginOuterVBoxColor {
+    -fx-background-color: #181842;
+
+}
+
+.StatusColor{
+    -fx-background-color: #3c3cc1;
+
+}
+
+.MainWindowsVBoxColor{
+    -fx-background-color: #2f2f51;
+
+}
+
+.table-view{
+    -fx-background-color: transparent;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #181842;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: white;
+}
+
+.table-row-cell{
+    -fx-background-color:  #181842;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #2f2f51;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #005797;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.table-view .filler {
+    -fx-background-color: #181842;
+}
+
+.choice-box {
+    -fx-background-color: transparent;
+}
+
+.choice-box .context-menu {
+    -fx-background-color: #181842;
+}
+
+.choice-box .menu-item:focused {
+    -fx-background-color: #47476e;
+}
+
+.choice-box .menu-item > .label {
+    -fx-text-fill: white;
+}
+
+.choice-box .menu-item:focused > .label {
+    -fx-text-fill: white;
+}
+
+.combo-box .list-cell {
+    -fx-background: #1f1f4d;
+    -fx-background-color: #1f1f4d;
+    -fx-text-fill: white;
+    -fx-padding: 3 0 2 7;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover
+{
+    -fx-background-color:  #47476e;
+    -fx-text-fill: white;
+}
+
+.combo-box-base
+{
+    -fx-background-color: #2f2f51, #2f2f51, #2f2f51, #2f2f51;
+    -fx-background-radius: 5, 5, 4, 3;
+}
+
+.date-picker-popup > * > .day-cell {
+
+    -fx-background-color: #2f2f51;
+    -fx-text-fill: white;
+}
+
+.date-picker-popup > .month-year-pane {
+    -fx-background-color: #2f2f51;
+}
+
+.date-picker > .text-field {
+    -fx-background-color: #1f1f4d;
+    -fx-text-fill: white;
+}
+
+.date-picker > .arrow-button {
+    -fx-background-color: #2f2f51;
+}
+
+.date-picker-popup > * > .day-cell:hover{
+    -fx-background-color: #47476e;
+}
+
+.date-picker-popup > * > .spinner > .label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+}
+
+.date-picker-popup > * > .today {
+    -fx-background-color: #463cd0;
+    -fx-background-insets: 1, 2, 3;
+}
+
+.date-picker-popup > .calendar-grid {
+    -fx-background-color: #47476e;
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="542.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FluzeugeZeigenController">
+  <children>
+      <TableView fx:id="tableFlugzeuge" layoutX="63.0" layoutY="141.0" prefHeight="339.0" prefWidth="544.0">
+        <columns>
+          <TableColumn fx:id="idcol1" prefWidth="100.0" text="Hersteller" />
+          <TableColumn fx:id="idcol2" minWidth="2.0" prefWidth="99.0" text="Flugzeugtyp" />
+            <TableColumn fx:id="idcol3" minWidth="0.0" prefWidth="96.0" text="Anzahl_Sitzplaetze" />
+            <TableColumn fx:id="idcol4" minWidth="0.0" prefWidth="83.0" text="Geschwindigkeit" />
+            <TableColumn fx:id="idcol5" minWidth="0.0" prefWidth="77.0" text="Preis_in_Mio" />
+            <TableColumn fx:id="idcol6" minWidth="0.0" prefWidth="87.0" text="Reichweite" />
+            <TableColumn fx:id="idcol18" minWidth="0.0" prefWidth="87.0" text="Reichweite" />
+        </columns>
+      </TableView>
+      <Label layoutX="277.0" layoutY="8.0" prefHeight="50.0" prefWidth="154.0" text="Flugzeuge">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAbbrechen" layoutX="525.0" layoutY="496.0" mnemonicParsing="false" onAction="#abbrechen" text="Abbrechen" />
+      <Button fx:id="btnkaufen" layoutX="80.0" layoutY="496.0" mnemonicParsing="false" onAction="#kaufen" text="Kaufen" />
+      <Label layoutX="81.0" layoutY="69.0" text="Select File :" />
+      <TextField fx:id="file_tf" layoutX="179.0" layoutY="65.0" onMouseClicked="#selectFile" prefHeight="25.0" prefWidth="329.0" promptText="Select a file" />
+      <Button fx:id="load_bt" layoutX="525.0" layoutY="65.0" mnemonicParsing="false" onAction="#loadFile" prefHeight="25.0" prefWidth="74.0" text="Load DB" />
+  </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefWidth="650.0" prefHeight="530.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.KilometerKontoController">
+    <children>
+        <Label fx:id="kontoLabel" layoutX="250.0" layoutY="10.0" prefHeight="45.0" prefWidth="200.0" text="Kilometerkonto">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Label>
+        <Label fx:id="kilometerLabel" layoutX="10" layoutY="150.0" prefHeight="50.0" prefWidth="640.0" text="Geflogene Kilometer insgesammt: ">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Label>
+        <Label fx:id="CO2Label" layoutX="10" layoutY="300" prefHeight="50.0" prefWidth="640.0" text="Insgesammte CO2 Produktion: " >
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnAbbrechen" layoutX="325" layoutY="500" mnemonicParsing="false" onAction="#abbrechen" text="Zurück" />
+    </children>
+</AnchorPane>

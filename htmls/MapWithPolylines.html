@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Basic Map</title>
+    <style>
+		#map {
+			height: 100%;
+		}
+		/* Optional: Makes the sample page fill the window. */
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+    <script>
+
+        function findGetParameter(parameterName) {
+            var result = null,
+                tmp = [];
+            var items = location.search.substr(1).split("&");
+            for (var index = 0; index < items.length; index++) {
+                tmp = items[index].split("=");
+                if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+            }
+            return result;
+        }
+
+
+		function initMap() {
+			var mapOptions = {
+				zoom: 5,
+				center: new google.maps.LatLng(40.7534, -85.1606),
+				mapTypeId: 'roadmap'
+			};
+			var map = new google.maps.Map(document.getElementById('map'),
+				mapOptions);
+
+
+            var latdefault1=40.759011,
+                lngdefault1=-73.984472,
+                latdefault2=18.291,
+                lngdefault2=-104.984837,
+
+                lat1=latdefault1,
+                lng1=lngdefault1;
+
+                lat2=latdefault2,
+                lng2=lngdefault2;
+
+            lat1=findGetParameter("lat1");
+            lng1=findGetParameter("lng1");
+            lat2=findGetParameter("lat2");
+            lng2=findGetParameter("lng2");
+
+            if(lat1==null){
+                lat1=latdefault1;
+            }
+            else{
+                lat1=Number(lat1);
+            }
+
+            if(lng1==null){
+                lng1=lngdefault1;
+            }
+            else{
+                lng1=Number(lng1);
+            }
+
+            if(lat2==null){
+                lat2=latdefault2;
+            }
+            else{
+                lat2=Number(lat2);
+            }
+
+            if(lng2==null){
+                lng2=lngdefault2;
+            }
+            else{
+                lng2=Number(lng2);
+            }
+
+            var roadTripCoordinates = [
+				{lat:lat1, lng:lng1},
+				{lat:lat2, lng:lng2}
+			];
+
+			var roadTrip = new google.maps.Polyline({
+				path: roadTripCoordinates,
+				strokeColor: '#FF0000',
+				strokeOpacity: 1.0,
+				strokeWeight: 2
+			});
+
+            var marker1 = new google.maps.Marker({
+                position: roadTripCoordinates[0],
+                map: map,
+                title: "Start Airport",
+                icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+
+            });
+
+            var marker2 = new google.maps.Marker({
+                position: roadTripCoordinates[ roadTripCoordinates.length - 1 ],
+                map: map,
+                title: "Destination Airport",
+                icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
+            });
+
+			roadTrip.setMap(map);
+		}
+	</script>
+</head>
+<body>
+<div id="map"></div>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTM5RKrtCLpZAj5HU3K3cTvFNB240NsBg&callback=initMap">
+</script>
+</body>
+</html>

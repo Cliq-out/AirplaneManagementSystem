@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="rootPane" stylesheets="@SEPCSS.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+    <right>
+    <VBox alignment="CENTER" styleClass="LoginOuterVBoxColor" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="340.0" prefWidth="250.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="329.0" prefWidth="206.0" styleClass="LoginInnerVBoxColor" stylesheets="@SEPCSS.css">
+                     <children>
+                        <HBox alignment="BOTTOM_CENTER" maxWidth="180.0" prefHeight="35.0" prefWidth="206.0" styleClass="LoginHBox" stylesheets="@SEPCSS.css">
+                           <children>
+                              <TextField fx:id="txtBN" alignment="CENTER" promptText="Benutzername" styleClass="UniversalText" stylesheets="@SEPCSS.css">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="BOTTOM_CENTER" maxWidth="180.0" prefHeight="35.0" prefWidth="200.0" styleClass="LoginHBox" stylesheets="@SEPCSS.css">
+                           <children>
+                              <PasswordField fx:id="psfPW" alignment="CENTER" promptText="Passwort" styleClass="UniversalText" stylesheets="@SEPCSS.css">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </PasswordField>
+                           </children>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </HBox>
+                        <Label fx:id="txtStatus" styleClass="UniversalText" textFill="#ff4949">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#login" prefHeight="20.0" prefWidth="160.0" styleClass="UniversalButton" stylesheets="@SEPCSS.css" text="Login">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="35.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="33.0" layoutY="244.0" mnemonicParsing="false" onAction="#register" prefHeight="20.0" prefWidth="160.0" styleClass="UniversalButton" stylesheets="@SEPCSS.css" text="Registrierung">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+    </right>
+   <center>
+      <Pane BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

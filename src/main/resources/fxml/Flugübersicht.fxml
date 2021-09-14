@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="508.0" prefWidth="838.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FlugübersichtController">
+    <children>
+        <Label layoutX="408.0" prefHeight="50.0" prefWidth="200.0" text="Flugübersicht">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnAbbrechen" layoutY="469.0" mnemonicParsing="false" onAction="#abbrechen" text="Abbrechen" />
+        <TableView fx:id="tableFluglinie" layoutY="45.0" prefHeight="415.0" prefWidth="926.0" styleClass="tableview">
+            <columns>
+                <TableColumn fx:id="id_Flug" prefWidth="72.00002747774124" text="FlugID" />
+                <TableColumn fx:id="id_fluglinie" prefWidth="75.20001220703125" text="FluglinieID" />
+            <TableColumn fx:id="model" prefWidth="88.80001831054688" text="FlugzeugTyp" />
+                <TableColumn fx:id="abfahrtdate" prefWidth="87.20008850097656" text="Abfahrtdate" />
+            <TableColumn fx:id="startairport" prefWidth="140.0" text="Von" />
+            <TableColumn fx:id="endairport" prefWidth="137.60003662109375" text="Nach" />
+                <TableColumn fx:id="nr_eco" prefWidth="71.199951171875" text="Eco Seats" />
+                <TableColumn fx:id="bus_seats" prefWidth="79.199951171875" text="Bus_Seats" />
+            <TableColumn fx:id="preis_Eco" minWidth="0.0" prefWidth="91.9998779296875" text="Preis_Eco" />
+            <TableColumn fx:id="preis_Bus" prefWidth="78.39993896484373" text="Preis_Bus" />
+            </columns>
+        </TableView>
+      <Button fx:id="btn_pdfExport" layoutX="849.0" layoutY="469.0" mnemonicParsing="false" onAction="#pdfExportieren" text="PDF Export" />
+    </children>
+</AnchorPane>

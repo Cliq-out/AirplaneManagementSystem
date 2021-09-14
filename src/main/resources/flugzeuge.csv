@@ -1,0 +1,41 @@
+Hersteller;Flugzeugtyp;Anzahl_Sitzplaetze;Geschwindigkeit;Preis_in_Mio;Reichweite
+Bombardier;CRJ900;86;880;46;2500
+Embraer;E195;120;835;70;4260
+Airbus;A319;142;840;76;6900
+Boeing;737;220;828;76;5420
+Airbus;A380;555;907;328;15200
+Boeing;747;400;920;280;13450
+Airbus;A320neo;180;840;100;2850
+Airbus;A330-300;236;870;259;10000
+Airbus;A321-100;200;904;116;5600
+Airbus;A340-300;400;915;228;13699
+Airbus;A340-600;440;915;228;14599
+Aerospatiale ;SA 330 Puma;16;256;114;780
+Airbus;Eurocopter H120;4;222;235;709
+Hughes;AH-64 Apache;2;309;430;400
+Kamow;Ka-26;6;170;80;400
+Diamond Aircraft;D-JET;5;583;4;2500
+Douglas;DC-8;262;967;70;3445
+EKW;Häfeli DH-3 (M III);2;250;26;400
+Dornier;DO 328;35;620;140;1852
+Fairey;Swordfish;3;222;42;1658
+Fokker;S-14 Machtrainer;2;1352;9;965
+Kawasaki;T-4;2;1037;44;1296
+Marganski & Myslowski;EM-11 Orka;4;350;3;1685
+North American;B-25;6;443;12;2172
+Rumpler Flugzeugwerke;Taube;2;100;0.2;141
+Boeing;757-200;239;982;162;7223
+Boeing;707;189;1009;174;9260
+Boeing;247;12;304;11;1296
+Airbus;A300-600ST Beluga;2;780;218;2778
+Airbus;A380;853;945;312;15199
+Aerospatiale ;BAC Concorde;100;2330;176;7251
+Airspeed;AS.57 Ambassador;50;398;140;1159
+British Aerospace;Jetstream 41;31;480;21;1433
+Focke-Wulf;200 Condor;27;359;56;3556
+Dassault;Falcon 7X;19;970;41;11020
+Airbus;A350-800;280;960;317;15860
+Boeing;787-9 Dreamliner;420;945;201;14140
+SEP;Solarplane;43;336;999;20000
+Hughes;H-4 Spruce Goose;750;378;162;4827
+Lockheed;C-5;20;919;224;10411

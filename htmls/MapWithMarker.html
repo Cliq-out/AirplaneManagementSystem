@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <style>
+        /* Set the size of the div element that contains the map */
+        #map {
+            height: 100%;  /* The height is 400 pixels */
+            width: 100%;  /* The width is the width of the web page */
+        }
+		html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        }
+		
+		#floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+      #floating-panel {
+        margin-left: -100px;
+      }
+    </style>
+</head>
+<body>
+<div id="floating-panel">
+  <input type="button" value="Toggle Street View" onclick="toggleStreetView();"></input>
+</div>
+<!--The div element for the map -->
+<div id="map"></div>
+<script>
+
+	var panorama;
+	
+	function findGetParameter(parameterName) {
+		var result = null,
+			tmp = [];
+		var items = location.search.substr(1).split("&");
+		for (var index = 0; index < items.length; index++) {
+			tmp = items[index].split("=");
+			if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+		}
+		return result;
+	}
+    // Initialize and add the map
+    function initMap() {
+	    var latdefault=-25.344,
+            lngdefault=131.036,
+            lat=latdefault,
+            lng=lngdefault;
+
+	    lat=findGetParameter("lat");
+	    lng=findGetParameter("lng");
+
+	    if(lat==null){
+	        lat=latdefault;
+	    }
+	    else{
+	        lat=Number(lat);
+        }
+
+        if(lng==null){
+            lng=lngdefault;
+        }
+        else{
+            lng=Number(lng);
+        }
+        // The location 
+        var location = {lat: lat, lng: lng};
+        // The map, centered at location
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 18, center: location});
+        // The marker, positioned at location
+        var marker = new google.maps.Marker({position: location, map: map});
+		
+		// We get the map's default panorama and set up some defaults.
+        // Note that we don't yet set it visible.
+        panorama = map.getStreetView();
+        panorama.setPosition(location);
+        panorama.setPov(/** @type {google.maps.StreetViewPov} */({
+          heading: 265,
+          pitch: 0
+        }));
+    }
+	
+	function toggleStreetView() {
+        var toggle = panorama.getVisible();
+        if (toggle == false) {
+          panorama.setVisible(true);
+        } else {
+          panorama.setVisible(false);
+        }
+      }
+</script>
+<!--Load the API from the specified URL
+* The async attribute allows the browser to render the page while the API loads
+* The key parameter will contain your own API key (which is not needed for this tutorial)
+* The callback parameter executes the initMap() function
+-->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA87JpZqj6tMfMHKUuvqvxH7jIxJfV0L0Y&callback=initMap">
+</script>
+</body>
+</html>

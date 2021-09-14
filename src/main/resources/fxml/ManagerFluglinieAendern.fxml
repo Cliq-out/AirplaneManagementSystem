@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FluglinieAendernController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="500.0" prefWidth="420.0">
+          <children>
+            <HBox VBox.vgrow="ALWAYS">
+               <children>
+                      <Label prefHeight="27.0" prefWidth="96.0" text="Interval:" textFill="WHITE">
+                          <font>
+                              <Font name="System Bold" size="18.0" />
+                          </font>
+                      </Label>
+                      <ChoiceBox fx:id="interval" prefHeight="32.0" prefWidth="287.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                      <ComboBox fx:id="flugzeug" prefHeight="32.0" prefWidth="287.0" promptText="Wählen sie Ihr Flugzeug aus." />
+               </children>
+            </HBox>
+            <HBox VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                      <TextField fx:id="fluglinieID" alignment="CENTER" prefHeight="32.0" prefWidth="420.0" promptText="Please enter Airline ID" styleClass="UnderLinedText" />
+               </children>
+            </HBox>
+            <HBox VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                    <TextField fx:id="e_sitNr1" alignment="CENTER" prefHeight="38.0" prefWidth="287.0" promptText="Anzahl der Economy Sitze" styleClass="UnderLinedText" />
+               </children>
+            </HBox>
+            <HBox VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                    <TextField fx:id="b_sitNr" alignment="CENTER" prefHeight="41.0" prefWidth="290.0" promptText="Anzahl der Business Sitze" styleClass="UnderLinedText" />
+               </children>
+            </HBox>
+              <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                  <children>
+                      <TextField fx:id="e_price" alignment="CENTER" prefHeight="41.0" prefWidth="290.0" promptText="Preis der Economy Sitze" styleClass="UnderLinedText" />
+                      <TextField fx:id="b_price" alignment="CENTER" prefHeight="41.0" prefWidth="290.0" promptText="Preis der Business Sitze" styleClass="UnderLinedText">
+                          <HBox.margin>
+                              <Insets left="2.0" />
+                          </HBox.margin>
+                      </TextField>
+                  </children>
+                  <VBox.margin>
+                      <Insets />
+                  </VBox.margin>
+              </HBox>
+              <HBox alignment="CENTER" prefHeight="39.0" prefWidth="259.0" VBox.vgrow="ALWAYS">
+                  <children>
+                      <Button fx:id="btnAnlegen" mnemonicParsing="false" onAction="#weiter" prefHeight="41.0" prefWidth="140.0" styleClass="UniversalButton" text="Anlegen" />
+                  </children>
+                  <VBox.margin>
+                      <Insets bottom="20.0" />
+                  </VBox.margin>
+              </HBox>
+          </children>
+         <HBox.margin>
+            <Insets left="5.0" right="5.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>

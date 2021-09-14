@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FluzeugeZeigenController">
+   <children>
+      <VBox alignment="CENTER" fillWidth="false" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                    <Label prefHeight="50.0" prefWidth="154.0" text="Flugzeuge">
+                        <font>
+                            <Font name="System Bold" size="29.0" />
+                        </font>
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                    </Label>
+                    <TextField fx:id="file_tf" onMouseClicked="#selectFile" prefHeight="25.0" prefWidth="329.0" promptText="Wählen sie die zu laden Flugzeug Datei." />
+                    <Button fx:id="load_bt" mnemonicParsing="false" onAction="#loadFile" prefHeight="25.0" prefWidth="74.0" styleClass="UniversalButton" text="Load">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+              <TableView fx:id="tableFlugzeuge" prefHeight="339.0" prefWidth="544.0" VBox.vgrow="ALWAYS">
+                  <columns>
+                      <TableColumn fx:id="idcol1" prefWidth="100.0" text="Hersteller" />
+                      <TableColumn fx:id="idcol2" minWidth="2.0" prefWidth="99.0" text="Flugzeugtyp" />
+                      <TableColumn fx:id="idcol3" minWidth="0.0" prefWidth="96.0" text="Anzahl_Sitzplaetze" />
+                      <TableColumn fx:id="idcol4" minWidth="0.0" prefWidth="83.0" text="Geschwindigkeit" />
+                      <TableColumn fx:id="idcol5" minWidth="0.0" prefWidth="77.0" text="Preis_in_Mio" />
+                      <TableColumn fx:id="idcol6" minWidth="0.0" prefWidth="87.0" text="Reichweite" />
+                  </columns>
+              </TableView>
+            <HBox alignment="CENTER">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+               <children>
+                    <Button fx:id="btnkaufen" alignment="CENTER" mnemonicParsing="false" onAction="#kaufen" prefHeight="25.0" prefWidth="160.0" styleClass="UniversalButton" text="Kaufen" textAlignment="CENTER" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

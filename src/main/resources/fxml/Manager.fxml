@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="660.0" prefWidth="901.0" styleClass="LoginInnerVBox" stylesheets="@SEPCSS.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagerController">
+   <left>
+      <VBox minHeight="0.0" minWidth="0.0" styleClass="LoginOuterVBoxColor" stylesheets="@SEPCSS.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/11.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+         <children>
+            <HBox alignment="CENTER" minHeight="100.0" prefHeight="100.0" prefWidth="200.0" styleClass="StatusColor" stylesheets="@SEPCSS.css">
+               <children>
+                  <Label prefHeight="53.0" prefWidth="102.0" text="Manager" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Button fx:id="btnFlgLinAnsehen" mnemonicParsing="false" onAction="#FlgLinAnsehen" prefHeight="74.0" prefWidth="200.0" text="Fluglinie ansehen" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnFlgGeselAnlegen" mnemonicParsing="false" onAction="#GesAnlegen" prefHeight="74.0" prefWidth="200.0" stylesheets="@SEPCSS.css" text="Fluggesellschaft anlegen" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnFlugHfZeigen" layoutX="10.0" layoutY="406.0" mnemonicParsing="false" onAction="#FlugHfZeigen" prefHeight="74.0" prefWidth="200.0" text="Flughäfen ansehen" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnFlgLinAnlegen" mnemonicParsing="false" onAction="#FlglinAnlegen" prefHeight="74.0" prefWidth="200.0" text="Fluglinie anlegen" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnFlgLinAendern" mnemonicParsing="false" onAction="#FlgLinAendern" prefHeight="74.0" prefWidth="200.0" text="Fluglinie ändern" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnFlugZgZeigen" layoutX="10.0" layoutY="480.0" mnemonicParsing="false" onAction="#FlugZgZeigen" prefHeight="74.0" prefWidth="200.0" text="Flugzeug zeigen" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Pane prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <Button fx:id="btnAusgang" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" onAction="#logout" prefHeight="95.0" prefWidth="199.0" styleClass="StatusColor" stylesheets="@SEPCSS.css" text="LOGOUT" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Pane prefWidth="701.0" />
+   </center>
+</BorderPane>

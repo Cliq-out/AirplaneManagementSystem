@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="508.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BuchungsübersichtController">
+    <children>
+        <Label layoutX="399.0" layoutY="-1.0" prefHeight="50.0" prefWidth="200.0" text="Buchungsübersicht">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnAbbrechen" layoutY="469.0" mnemonicParsing="false" onAction="#abbrechen" text="Abbrechen" />
+        <TableView fx:id="tableFluglinie" layoutY="44.0" prefHeight="420.0" prefWidth="926.0" styleClass="tableview">
+            <columns>
+                <TableColumn fx:id="id_buchung" prefWidth="75.0" text="BuchungID" />
+                <TableColumn fx:id="id_kunde" prefWidth="56.0" text="KundeID" />
+                <TableColumn fx:id="id_fluglinie" prefWidth="65.0" text="FluglinieID" />
+                <TableColumn fx:id="date" prefWidth="60.79998779296875" text="Datum" />
+                <TableColumn fx:id="nr_Eco" prefWidth="68.79998779296875" text="Nr_Eco" />
+                <TableColumn fx:id="nr_bus" prefWidth="91.20001220703125" text="Nr_Bus" />
+                <TableColumn fx:id="betrag" prefWidth="84.80007934570312" text="Betrag" />
+                <TableColumn fx:id="start" prefWidth="77.60003662109375" text="start" />
+                <TableColumn fx:id="end" prefWidth="76.0" text="end" />
+            <TableColumn fx:id="flugzeugstyp" prefWidth="95.199951171875" text="Flugzeug Model" />
+            <TableColumn fx:id="buchungsdatum" prefWidth="96.7999267578125" text="Buchungsdatum" />
+            <TableColumn fx:id="art" prefWidth="122.39990234375" text="art" />
+            </columns>
+        </TableView>
+      <Button fx:id="btn_pdfExport" layoutX="849.0" layoutY="469.0" mnemonicParsing="false" onAction="#pdfExportieren" text="PDF Export" />
+    </children>
+</AnchorPane>
